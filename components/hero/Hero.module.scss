@@ -1,0 +1,19 @@
+.hero {
+  text-align: center;
+  padding: 15px 20px;
+  width: 85%;
+  margin: 0 auto;
+  h1 {
+    font-size: 4rem;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    width: 98%;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
