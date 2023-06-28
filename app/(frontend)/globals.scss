@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+body {
+  background: rgb(7, 4, 50);
+
+  //   background: rgb(18, 32, 75);
+  background: radial-gradient(circle, rgb(7, 4, 50) 11%, rgba(1, 1, 51, 1) 95%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Agdasima", sans-serif;
+  background: #4af2f7;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #4af2f7 60%,
+    #00ff55 88%,
+    #00ff55 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  //   background: #4af2f7;
+  //   background: radial-gradient(
+  //     circle farthest-corner at center center,
+  //     #4af2f7 38%,
+  //     #c4c4ff 100%
+  //   );
+  //   -webkit-background-clip: text;
+  //   -webkit-text-fill-color: transparent;
+}
