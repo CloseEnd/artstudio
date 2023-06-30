@@ -1,0 +1,79 @@
+.h1 {
+  font-size: 2.5rem;
+  margin: 30px 0;
+}
+
+.h2 {
+  font-size: 2rem;
+  margin: 25px 0;
+}
+.h3 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+.h4 {
+  font-size: 1.5rem;
+  margin: 30px 0;
+}
+.h5 {
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+.h6 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+.quote {
+  font-size: 1.4em;
+  width: 100%;
+  margin: 50px auto;
+  // font-family: Open Sans;
+  font-style: italic;
+  color: #555555;
+  padding: 1.2em 30px 1.2em 50px;
+  border-left: 8px solid #000;
+  line-height: 1.6;
+  position: relative;
+  background: #ededed;
+}
+.list {
+  margin: 20px;
+  margin-left: 60px;
+  li {
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .h1 {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+  .quote {
+    font-size: 1.3em;
+    padding: 1.2em 10px 1.2em 10px;
+    border-left: 8px solid #000;
+    line-height: 1.6;
+    position: relative;
+    background: #ededed;
+  }
+  .h2 {
+    font-size: 1.8rem;
+  }
+  .h3 {
+    font-size: 1.5rem;
+  }
+  .img {
+    height: 250px;
+    margin: 50px auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .h1 {
+    font-size: 1.8rem;
+  }
+  .h2 {
+    font-size: 1.5rem;
+  }
+}
