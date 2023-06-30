@@ -1,0 +1,103 @@
+.aboutme {
+  width: 85%;
+  margin: 150px auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  .txt {
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    p {
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    width: 49%;
+    .button {
+      background-color: transparent;
+      outline: none;
+      padding: 1rem;
+      font-size: 1rem;
+      padding: 0.5rem 1.5rem;
+      color: #000;
+      font-weight: 600;
+      box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+      border: solid 3px transparent;
+      background-image: linear-gradient(
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0)
+        ),
+        linear-gradient(101deg, #02ffea, #01ff38);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      box-shadow: 2px 1000px 1px #fff inset;
+      margin-top: 20px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .img {
+    width: 48%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutme {
+    width: 85%;
+    margin: 150px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .txt {
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+      p {
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      width: 49%;
+      .button {
+        background-color: transparent;
+        outline: none;
+        padding: 1rem;
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+        color: #000;
+        font-weight: 600;
+        box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+        border: solid 3px transparent;
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0)
+          ),
+          linear-gradient(101deg, #02ffea, #01ff38);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        box-shadow: 2px 1000px 1px #fff inset;
+        margin-top: 20px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .img {
+      width: 48%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
