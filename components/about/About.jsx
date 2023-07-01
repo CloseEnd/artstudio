@@ -5,6 +5,7 @@ import { PortableText } from "@portabletext/react";
 import { RichText } from "../Richtext/RichText";
 import Image from "next/image";
 import { urlForImage } from "@/sanity/lib/image";
+import Link from "next/link";
 
 const About = async () => {
   const query = groq`
@@ -18,7 +19,9 @@ const About = async () => {
         <p>
           <PortableText value={aboutme[0].bio} components={RichText} />
         </p>
-        <button className={styles.button}>Learn more</button>
+        <Link href={"/"}>
+          <button className={styles.button}>Learn more</button>
+        </Link>
       </div>
       <div className={styles.img}>
         <Image
