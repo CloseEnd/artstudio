@@ -45,7 +45,11 @@
   }
   .img {
     width: 48%;
+    border: 10px solid #242424;
+    padding: 20px;
+    background-color: #fff;
     img {
+      border: 2px solid #ccc;
       width: 100%;
       height: auto;
     }
