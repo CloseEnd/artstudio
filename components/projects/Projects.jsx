@@ -20,7 +20,7 @@ const Projects = async () => {
       <div className={styles.images}>
         <div className={styles.firsthalf}>
           {projects.slice(0, projectsHalf).map((project) => (
-            <div className={styles.linkcontainer}>
+            <div key={project.id} className={styles.linkcontainer}>
               <Link href={`/projects/${project.name}`}>
                 <Image
                   src={urlForImage(project.image).url()}

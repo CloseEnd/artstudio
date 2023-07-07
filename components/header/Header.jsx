@@ -2,6 +2,8 @@
 import { useState, useEffect } from "react";
 import styles from "./Header.module.scss";
 import Link from "next/link";
+import logo from "../../public/logo.png";
+import Image from "next/image";
 
 const Header = () => {
   const [mobile, setmobile] = useState(false);
@@ -17,7 +19,7 @@ const Header = () => {
       <nav>
         <Link href={"/"}>
           <div className={styles.logo}>
-            <h1>Okayi Job</h1>
+            <Image src={logo} alt={logo} />
           </div>
         </Link>
         <p className={styles.menu} onClick={() => setmenuopen(!menuopen)}>
