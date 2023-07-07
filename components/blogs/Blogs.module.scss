@@ -17,7 +17,7 @@
     font-size: 2rem;
   }
   a {
-    margin-top: 50px;
+    margin-top: 20px;
     align-self: flex-end;
     button {
       background-color: transparent;
@@ -52,11 +52,45 @@
     align-items: center;
     .blog {
       width: 33%;
+      border: 1px solid #000;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s;
+      height: 550px;
       img {
         width: 100%;
-        height: 250px;
+        height: 550px;
+        object-fit: cover;
       }
-      padding: 10px;
+      &:hover {
+        .info {
+          animation: updown 2.5s;
+        }
+      }
+      @keyframes updown {
+        0% {
+          bottom: 0;
+        }
+        50% {
+          bottom: -160px;
+        }
+        100% {
+          bottom: 0;
+        }
+      }
+      .info {
+        position: absolute;
+        bottom: 0;
+        transition: all 0.5s;
+        width: 100%;
+        height: 160px;
+        background-color: #000;
+        p {
+          color: #fff;
+          font-size: 2.6rem;
+          font-weight: 700;
+        }
+      }
       p {
         margin: 10px 0;
       }
@@ -81,6 +115,10 @@
       .blog {
         margin-top: 20px;
         width: 100%;
+        height: 500px;
+        img {
+          height: 500px;
+        }
       }
     }
   }
