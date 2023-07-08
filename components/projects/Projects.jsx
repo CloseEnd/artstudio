@@ -9,7 +9,8 @@ import Link from "next/link";
 const Projects = async () => {
   const query = groq`*[_type == "projects"]`;
   const projects = await client.fetch(query);
-  const projectsHalf = Math.ceil(projects.length / 2);
+  const projects2 = projects.filter((project, i) => i < 4);
+  const projectsHalf = Math.ceil(projects2.length / 2);
   //   console.log("====================================");
   //   console.log(projects);
   //   console.log("====================================");
@@ -19,7 +20,7 @@ const Projects = async () => {
       <ArrowDownIcon />
       <div className={styles.images}>
         <div className={styles.firsthalf}>
-          {projects.slice(0, projectsHalf).map((project) => (
+          {projects2.slice(0, projectsHalf).map((project) => (
             <div key={project.id} className={styles.linkcontainer}>
               <Link href={`/projects/${project.name}`}>
                 <Image
@@ -36,7 +37,7 @@ const Projects = async () => {
           ))}
         </div>
         <div className={styles.secondhalf}>
-          {projects.slice(projectsHalf, projects.length).map((project) => (
+          {projects2.slice(projectsHalf, projects.length).map((project) => (
             <div className={styles.linkcontainer}>
               <Link href={`/projects/${project.name}`}>
                 <Image
@@ -53,6 +54,9 @@ const Projects = async () => {
           ))}
         </div>
       </div>
+      <Link href={"/projects"}>
+        <button>View all projects</button>
+      </Link>
     </div>
   );
 };
