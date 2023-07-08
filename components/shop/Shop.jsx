@@ -12,30 +12,36 @@ const Shop = () => {
           <div className={styles.img}>
             <Image src={nextsvg} alt="img" />
           </div>
-          <div>
+          <div className={styles.info}>
             <h4>Potrait Art</h4>
             <p>Ush 150,000</p>
-			<button></button>
+            <a href="#contact">
+              <button>contact now</button>
+            </a>
           </div>
         </div>
         <div className={styles.item}>
           <div className={styles.img}>
             <Image src={nextsvg} alt="img" />
           </div>
-          <div>
+          <div className={styles.info}>
             <h4>Potrait Art</h4>
             <p>Ush 150,000</p>
-			<button></button>
+            <a href="#contact">
+              <button>contact now</button>
+            </a>
           </div>
         </div>
         <div className={styles.item}>
           <div className={styles.img}>
             <Image src={nextsvg} alt="img" />
           </div>
-          <div>
+          <div className={styles.info}>
             <h4>Potrait Art</h4>
             <p>Ush 150,000</p>
-			<button></button>
+            <a href="#contact">
+              <button>contact now</button>
+            </a>
           </div>
         </div>
       </div>
