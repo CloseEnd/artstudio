@@ -1,4 +1,5 @@
 import styles from "./Hero.module.scss";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -10,7 +11,9 @@ const Hero = () => {
           eaque sunt corrupti necessitatibus facilis assumenda expedita dolor
           saepe id voluptates nostrum praesentium, maxime optio iure!
         </p>
-        <button className={styles.button}>Shop now</button>
+        <Link href={"/shop"}>
+          <button className={styles.button}>Shop now</button>
+        </Link>
       </div>
     </div>
   );
