@@ -18,12 +18,12 @@
         display: flex;
         justify-content: space-between;
         list-style: none;
+        svg {
+          font-size: 22px;
+        }
         a {
           &:hover {
             text-decoration: none;
-            li {
-              color: aqua;
-            }
           }
         }
       }

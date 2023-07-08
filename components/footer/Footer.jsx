@@ -1,4 +1,7 @@
 import styles from "./Footer.module.scss";
+import { CiFacebook } from "react-icons/ci";
+import { AiOutlineWhatsApp, AiOutlineInstagram } from "react-icons/ai";
+import { LiaTelegramPlane } from "react-icons/lia";
 
 const Footer = () => {
   return (
@@ -14,20 +17,28 @@ const Footer = () => {
               <li>Privacy policy</li>
             </a>
             <a href="">
-              <li>f</li>
+              <li>
+                <CiFacebook />
+              </li>
             </a>
             <a href="">
-              <li>In</li>
+              <li>
+                <AiOutlineWhatsApp />
+              </li>
             </a>
             <a href="">
-              <li>Wa</li>
+              <li>
+                <AiOutlineInstagram />
+              </li>
             </a>
             <a href="">
-              <li>Tel</li>
+              <li>
+                <LiaTelegramPlane />
+              </li>
             </a>
-            <a href="">
+            {/* <a href="">
               <li>tw</li>
-            </a>
+            </a> */}
           </ul>
         </div>
       </div>
