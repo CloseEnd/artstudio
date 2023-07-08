@@ -30,19 +30,19 @@ const Header = () => {
             <Link href={"/"}>Home</Link>
           </li>
           <li>
-            <Link href={"/"}>Projects</Link>
+            <Link href={"/projects"}>Projects</Link>
           </li>
           <li>
-            <Link href={"/"}>About</Link>
+            <Link href={"/About"}>About</Link>
           </li>
           <li>
-            <Link href={"/"}>Shop</Link>
+            <Link href={"/shop"}>Shop</Link>
           </li>
           <li>
-            <Link href={"/"}>Blog</Link>
+            <Link href={"/Blog"}>Blog</Link>
           </li>
           <li>
-            <Link href={"/"}>Contact</Link>
+            <a href={"#contact"}>Contact</a>
           </li>
         </ul>
         {menuopen && (
@@ -51,19 +51,19 @@ const Header = () => {
               <Link href={"/"}>Home</Link>
             </li>
             <li>
-              <Link href={"/"}>Projects</Link>
+              <Link href={"/projects"}>Projects</Link>
             </li>
             <li>
-              <Link href={"/"}>About</Link>
+              <Link href={"/About"}>About</Link>
             </li>
             <li>
-              <Link href={"/"}>Blog</Link>
+              <Link href={"/Blog"}>Blog</Link>
             </li>
             <li>
-              <Link href={"/"}>Shop</Link>
+              <Link href={"/shop"}>Shop</Link>
             </li>
             <li>
-              <Link href={"/"}>Contact</Link>
+              <a href={"#contact"}>Contact</a>
             </li>
           </ul>
         )}
