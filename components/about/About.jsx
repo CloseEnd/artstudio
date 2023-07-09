@@ -17,7 +17,7 @@ const About = async () => {
       <div className={styles.txt}>
         <h1>ABOUT ME</h1>
         <p>
-          <PortableText value={aboutme[0].bio} components={RichText} />
+          <PortableText value={aboutme[0].bio[0]} components={RichText} />
         </p>
         <Link href={"/About"}>
           <button className={styles.button}>Learn more</button>
