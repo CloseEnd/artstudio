@@ -19,7 +19,7 @@ const About = async () => {
         <p>
           <PortableText value={aboutme[0].bio} components={RichText} />
         </p>
-        <Link href={"/"}>
+        <Link href={"/About"}>
           <button className={styles.button}>Learn more</button>
         </Link>
       </div>

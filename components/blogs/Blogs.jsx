@@ -14,6 +14,9 @@ const Blogs = async () => {
   // console.log("====================================");
   // console.log(posts);
   // console.log("====================================");
+  if (!posts.length) {
+    return <></>;
+  }
   return (
     <div className={styles.blogcontainer}>
       <h1>Blogs</h1>
@@ -33,7 +36,11 @@ const Blogs = async () => {
         {posts
           .filter((post, i) => i < 3)
           .map((post, _i) => (
-            <Link className={styles.blog} href={"/"} key={post._id}>
+            <Link
+              className={styles.blog}
+              href={`/Blog/${post.slug.current}`}
+              key={post._id}
+            >
               <div>
                 <Image
                   src={urlForImage(post.mainImage).url()}
@@ -48,7 +55,7 @@ const Blogs = async () => {
             </Link>
           ))}
       </div>
-      <Link href={"/"}>
+      <Link href={"/Blog"}>
         <button>More posts</button>
       </Link>
     </div>

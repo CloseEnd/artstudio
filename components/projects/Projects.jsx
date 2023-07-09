@@ -7,13 +7,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Projects = async () => {
-  const query = groq`*[_type == "projects"]`;
+  const query = groq`*[_type == "projects"] | order(_createdAt desc) `;
   const projects = await client.fetch(query);
   const projects2 = projects.filter((project, i) => i < 4);
   const projectsHalf = Math.ceil(projects2.length / 2);
-  //   console.log("====================================");
-  //   console.log(projects);
-  //   console.log("====================================");
+
   return (
     <div className={styles.projects}>
       <h1>Projects and designs</h1>
@@ -21,8 +19,11 @@ const Projects = async () => {
       <div className={styles.images}>
         <div className={styles.firsthalf}>
           {projects2.slice(0, projectsHalf).map((project) => (
-            <div key={project.id} className={styles.linkcontainer}>
-              <Link href={`/projects/${project.name}`}>
+            <div
+              key={project._id}
+              className={`animate__animated animate__backInLeft ${styles.linkcontainer}`}
+            >
+              <Link href={`/projects/${project.slug.current}`}>
                 <Image
                   src={urlForImage(project.image).url()}
                   alt={project.name}
@@ -38,8 +39,11 @@ const Projects = async () => {
         </div>
         <div className={styles.secondhalf}>
           {projects2.slice(projectsHalf, projects.length).map((project) => (
-            <div className={styles.linkcontainer}>
-              <Link href={`/projects/${project.name}`}>
+            <div
+              className={`animate__animated animate__backInRight ${styles.linkcontainer}`}
+              key={project._id}
+            >
+              <Link href={`/projects/${project.slug.current}`}>
                 <Image
                   src={urlForImage(project.image).url()}
                   alt={project.name}

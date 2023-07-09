@@ -1,6 +1,6 @@
 .blogcontainer {
   width: 85%;
-  margin: 50px auto;
+  margin: 100px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,6 +50,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
     .blog {
       width: 32%;
       border: 1px solid #000;

@@ -22,11 +22,6 @@
         padding: 20px;
         position: relative;
         margin: 10px 0;
-        &:hover {
-          .projectdetails {
-            display: flex;
-          }
-        }
         .projectdetails {
           position: absolute;
           top: 0;
@@ -44,6 +39,11 @@
             &:hover {
               text-decoration: underline;
             }
+          }
+        }
+        &:hover {
+          .projectdetails {
+            display: flex;
           }
         }
         img {
@@ -84,9 +84,12 @@
 @media (max-width: 768px) {
   .projects {
     width: 98%;
-    margin: 50px auto;
+    margin: 100px auto 20px;
     h1 {
       font-size: 1.9rem;
+    }
+    svg {
+      margin: 10px 0 20px;
     }
     .images {
       flex-direction: column;
