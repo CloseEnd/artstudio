@@ -4,6 +4,7 @@ import styles from "./Header.module.scss";
 import Link from "next/link";
 import logo from "../../public/logo.png";
 import Image from "next/image";
+import "animate.css";
 
 const Header = () => {
   const [mobile, setmobile] = useState(false);
@@ -46,7 +47,10 @@ const Header = () => {
           </li>
         </ul>
         {menuopen && (
-          <ul onClick={() => setmenuopen(false)} className={styles.navlinks2}>
+          <ul
+            onClick={() => setmenuopen(false)}
+            className={`animate__animated animate__zoomInDown ${styles.navlinks2}`}
+          >
             <li>
               <Link href={"/"}>Home</Link>
             </li>
