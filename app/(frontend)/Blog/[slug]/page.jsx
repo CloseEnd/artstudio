@@ -83,7 +83,7 @@ const Post = async ({ params: { slug } }) => {
               height={500}
             />
             <p>
-              <PortableText value={post.author.bio} components={RichText} />
+              <PortableText value={post.author.bio[0]} components={RichText} />
             </p>
             <Link href={"/About"}>
               <p>Read more</p>
