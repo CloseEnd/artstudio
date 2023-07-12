@@ -6,6 +6,8 @@ import { client } from "@/sanity/lib/client";
 import { groq } from "next-sanity";
 import { urlForImage } from "@/sanity/lib/image";
 
+export const revalidate = 30;
+
 const Blogs = async () => {
   const query = groq`
   *[_type == "post"] | order(_createdAt desc)

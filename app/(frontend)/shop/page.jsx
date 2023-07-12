@@ -5,6 +5,8 @@ import { client } from "@/sanity/lib/client";
 import { urlForImage } from "@/sanity/lib/image";
 import { groq } from "next-sanity";
 
+export const revalidate = 30;
+
 const Shop = async () => {
   const query = groq`
   *[_type == "shop"]

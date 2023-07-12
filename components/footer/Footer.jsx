@@ -10,7 +10,7 @@ const Footer = () => {
         <h1>2023 Close End art gallery.</h1>
         <div>
           <ul>
-            <a href="">
+            <a href="mailto:taleemmankuer@gmail.com">
               <li>email@example.com</li>
             </a>
             <a href="">

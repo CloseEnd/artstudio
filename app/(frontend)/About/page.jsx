@@ -7,6 +7,8 @@ import Image from "next/image";
 import { urlForImage } from "@/sanity/lib/image";
 import Link from "next/link";
 
+export const revalidate = 30;
+
 const About = async () => {
   const query = groq`
     *[_type == "author"]

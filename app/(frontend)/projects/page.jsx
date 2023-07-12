@@ -6,6 +6,8 @@ import { urlForImage } from "@/sanity/lib/image";
 import Image from "next/image";
 import Link from "next/link";
 
+export const revalidate = 30;
+
 const Projects = async () => {
   const query = groq`*[_type == "projects"]`;
   const projects = await client.fetch(query);

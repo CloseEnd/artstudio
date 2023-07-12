@@ -9,7 +9,7 @@ import { RichText } from "../../../../components/Richtext/RichText";
 import RelatedPosts from "@/components/RelatedPosts/RelatedPosts";
 import Comments from "@/components/comments/Comments";
 
-export const revalidate = 60;
+export const revalidate = 30;
 
 export async function generateMetadata({ params: { slug } }, parent) {
   const query = groq`
