@@ -96,9 +96,27 @@ const Contact = () => {
               +256772632727
             </a>
           </p>
-          <p>Email: closeend11@gmail.com</p>
-          <p>instagram: closeend</p>
-          <p>facebook: close end</p>
+          <p>
+            Email:{" "}
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.facebook.com/CLOSE-END-105023639330529"
+            >
+              closeend11@gmail.com
+            </a>{" "}
+          </p>
+          <p>instagram: Close End</p>
+          <p>
+            facebook page:{" "}
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.facebook.com/CLOSE-END-105023639330529"
+            >
+              Close End
+            </a>{" "}
+          </p>
           <p>telegram: +256772632727</p>
         </div>
       </div>

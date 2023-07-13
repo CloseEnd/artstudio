@@ -16,14 +16,18 @@ const Footer = () => {
             {/* <a href="">
               <li>Privacy policy</li>
             </a> */}
-            <a href="">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.facebook.com/CLOSE-END-105023639330529"
+            >
               <li>
                 <CiFacebook />
               </li>
             </a>
             <a
               target="_blank"
-              rel="nonreferrer"
+              rel="noreferrer"
               href="https://wa.me/256772632727"
             >
               <li>
