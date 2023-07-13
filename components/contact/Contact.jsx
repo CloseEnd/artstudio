@@ -106,7 +106,16 @@ const Contact = () => {
               closeend11@gmail.com
             </a>{" "}
           </p>
-          <p>instagram: Close End</p>
+          <p>
+            instagram:{" "}
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/breadgetta8/"
+            >
+              Close End
+            </a>{" "}
+          </p>
           <p>
             facebook page:{" "}
             <a

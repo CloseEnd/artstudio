@@ -34,7 +34,11 @@ const Footer = () => {
                 <AiOutlineWhatsApp />
               </li>
             </a>
-            <a href="">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/breadgetta8/"
+            >
               <li>
                 <AiOutlineInstagram />
               </li>
