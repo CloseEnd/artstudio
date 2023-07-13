@@ -2,6 +2,7 @@ import "./globals.scss";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import Contact from "@/components/contact/Contact";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "close end art gallery",
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <Analytics />
         <Header />
         {children}
         <Contact />
