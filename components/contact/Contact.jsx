@@ -86,11 +86,11 @@ const Contact = () => {
           </form>
         </div>
         <div className={styles.info}>
-          <p>whatsapp: +25677</p>
+          <p>whatsapp: +256772632727</p>
           <p>Email: closeend11@gmail.com</p>
           <p>instagram: closeend</p>
           <p>facebook: close end</p>
-          <p>telegram: +256728295086</p>
+          <p>telegram: +256772632727</p>
         </div>
       </div>
     </div>

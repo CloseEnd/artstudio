@@ -14,7 +14,7 @@ const Shop = async () => {
   return (
     <div className={styles.shop}>
       <h1>Shop</h1>
-      <p>Latest projects and custom work that you can purchase or order.</p>
+      <p>Latest projects and custom work that you can purchase fully framed.</p>
       <Link href={"/shop"}>
         <button className={styles.button}>see all items available</button>
       </Link>

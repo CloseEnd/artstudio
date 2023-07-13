@@ -10,12 +10,12 @@ const Footer = () => {
         <h1>2023 Close End art gallery.</h1>
         <div>
           <ul>
-            <a href="mailto:taleemmankuer@gmail.com">
-              <li>email@example.com</li>
+            <a href="mailto:closeend11@gmail.com">
+              <li>closeend11@gmail.com</li>
             </a>
-            <a href="">
+            {/* <a href="">
               <li>Privacy policy</li>
-            </a>
+            </a> */}
             <a href="">
               <li>
                 <CiFacebook />
