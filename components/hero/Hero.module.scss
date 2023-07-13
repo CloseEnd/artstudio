@@ -2,7 +2,7 @@
   // text-align: center;
   padding: 15px 20px;
   width: 100vw;
-  max-height: 100vh;
+  height: 100vh;
   overflow-x: hidden;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../../public/imgs/bg.jpg");
@@ -12,11 +12,11 @@
   margin: 0 auto;
   div {
     width: 70%;
-    margin: 14% auto 0;
+    margin: 13% auto 0;
   }
   h1 {
-    font-size: 5rem;
-    margin: 10px 0;
+    font-size: 4rem;
+    margin: 0;
     font-weight: 900;
   }
   .button {
