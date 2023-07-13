@@ -21,7 +21,11 @@ const Footer = () => {
                 <CiFacebook />
               </li>
             </a>
-            <a href="">
+            <a
+              target="_blank"
+              rel="nonreferrer"
+              href="https://wa.me/256772632727"
+            >
               <li>
                 <AiOutlineWhatsApp />
               </li>

@@ -86,7 +86,16 @@ const Contact = () => {
           </form>
         </div>
         <div className={styles.info}>
-          <p>whatsapp: +256772632727</p>
+          <p>
+            whatsapp:{" "}
+            <a
+              target="_blank"
+              rel="nonreferrer"
+              href="https://wa.me/256772632727"
+            >
+              +256772632727
+            </a>
+          </p>
           <p>Email: closeend11@gmail.com</p>
           <p>instagram: closeend</p>
           <p>facebook: close end</p>
