@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Shop = async () => {
   const query = groq`
-  *[_type == "shop"]
+  *[_type == "shop"] | order(_createdAt desc)
   `;
   const items = await client.fetch(query);
   return (
@@ -20,7 +20,7 @@ const Shop = async () => {
       </Link>
       <div className={styles.items}>
         {items
-          .filter((item, i) => i < 4)
+          .filter((item, i) => i < 3)
           .map((item, _i) => (
             <div className={styles.item} key={item._id}>
               <div className={styles.img}>
