@@ -9,8 +9,10 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 50px;
+    flex-wrap: wrap;
     .item {
       width: 32%;
+      margin: 10px 0;
       .img {
         width: 100%;
         border: 10px solid #242424;
