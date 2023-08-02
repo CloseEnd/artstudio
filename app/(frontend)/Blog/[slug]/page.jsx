@@ -74,7 +74,7 @@ const Post = async ({ params: { slug } }) => {
           <Comments postId={post._id} comments={comments} />
         </div>
         <div className={styles.relatedposts}>
-          <div className={styles.author}>
+          {/* <div className={styles.author}>
             <h1>About me</h1>
             <Image
               src={urlForImage(post.author.image).url()}
@@ -88,8 +88,8 @@ const Post = async ({ params: { slug } }) => {
             <Link href={"/About"}>
               <p>Read more</p>
             </Link>
-          </div>
-          <h1>Latest Posts</h1>
+          </div> */}
+          <h1>Recent Posts</h1>
           <div className={styles.postscontainer}>
             {latestPosts.map((post, i) => {
               if (i < 4) {

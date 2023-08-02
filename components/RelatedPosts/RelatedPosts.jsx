@@ -12,7 +12,16 @@ const RelatedPosts = ({ post }) => {
         height={250}
         alt={post.title}
       />
-      <p>{post.title}</p>
+      <div className={styles.txt}>
+        <p className={styles.title}>{post.title}</p>
+        <p className={styles.date}>
+          {new Date(post._createdAt).toLocaleDateString("en-US", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+          })}
+        </p>
+      </div>
     </Link>
   );
 };
